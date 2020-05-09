@@ -2,8 +2,8 @@
 <h1>Home</h1>
 <p><%=homeStartingContent%></p>
 <%for(post in posts){%>
-<h3><%=post%></h3>
-<%var str = "/posts/"+post%>
-<p><%=posts[post].substring(0,100)+"... "%><a href=<%=str.split(' ').join('<+>')%>>Read more</a></p>
+<h3><%=posts[post]['title']%></h3>
+<%var str = "/posts/"+posts[post]['_id']%>
+<p><%=posts[post]['post'].substring(0,100)+"... "%><a href=<%=str%>>Read more</a></p>
 <%}%>
 <%- include('partials/footer') -%>

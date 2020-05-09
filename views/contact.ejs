@@ -1,4 +1,41 @@
 <%- include('partials/header') -%>
-<h1>Contact us</h1>
-<p><%=contactContent%></p>
+<div class="container">
+  <h1>Contact us</h1>
+  <p><%=contactContent%></p>
+  <h3 class="">Fill in the details to reach me.</h3>
+  <form action="mailto:rkp1819@gmail.com" method="post" enctype="text/plain">
+
+      <div class="">
+        <label>First name</label>
+        <input type="text" class="" placeholder="First name" minlength="3" required>
+      </div>
+      <div class="">
+        <label>Last name</label>
+        <input type="text"  class="" placeholder="Last name" required>
+      </div>
+      <div class="">
+        <label>Comments</label>
+          <div class="">
+            <span class="input-group-text " id="inputGroupPrepend3">@</span>
+          </div>
+          <textarea name="requirement" rows="8" cols="80" maxlength="1000" placeholder="What is it about...." required></textarea>
+      </div>
+      <div class="">
+        <label>Phone No:</label>
+        <input type="tel" name="phno" class="" placeholder="+91-123457890" pattern="+[0-9]{2}[0-9]{10}" required>
+      </div>
+      <div class="">
+        <div>
+          <input type="checkbox" value="" required>
+          <label>
+            Agree to be contacted.
+          </label>
+        </div>
+      </div>
+      <div class="">
+        <input type="submit" class=" btn btn-primary">
+      </div>
+  </form>
+  </div>
+
 <%- include('partials/footer') -%>

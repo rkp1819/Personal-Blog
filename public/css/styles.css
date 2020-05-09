@@ -3,7 +3,7 @@
     padding-bottom: 70px;
 }
 .navbar {
-    position:fixed;
+    position:sticky;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
